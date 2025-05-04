@@ -1,0 +1,37 @@
+name: code
+version: 0.0.1
+schema: v1
+rules:
+  - >-
+    Build & Development Commands
+
+    Use npm install to install all dependencies.
+
+    Run npm run build to compile the project for production.
+
+    Use npm run dev to start the development server with hot reloading.
+
+    Testing Guidelines
+
+    Run npm test to execute all unit tests.
+
+    Use npm run test:watch to run tests in watch mode during development.
+
+    Ensure all new features have corresponding tests in the __tests__ folder.
+
+    Code Style & Guidelines
+
+    Adhere to ESLint and Prettier configurations for consistent formatting.
+
+    Use TypeScript for type safety and consistent type annotations.
+
+    Follow the project's directory structure and naming conventions.
+
+    Documentation Guidelines
+
+    Use JSDoc for documenting functions, classes, and complex logic.
+
+    Maintain a clear README file with setup instructions and usage examples.
+
+    Update the docs/ folder for any new features or changes to existing
+    functionality.

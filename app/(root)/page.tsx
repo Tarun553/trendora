@@ -1,13 +1,15 @@
-import sampleData from '@/db/sample-data';
-import ProductList from '@/components/shared/product/product-list';
-const Homepage = () => {
-  
+import ProductList from "@/components/shared/product/product-list";
+import { getProducts } from "@/lib/actions/product.actions";
+
+const Homepage = async () => {
+
+  const latestProducts = await getProducts();
+
   return (
     <div>
-      <ProductList data={sampleData.products} title="New Arrivals" />
-      
+      <ProductList data={latestProducts} title="New Arrivals" />
     </div>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;
